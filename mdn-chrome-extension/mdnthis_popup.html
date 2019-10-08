@@ -1,0 +1,158 @@
+<!-- Bubble host -->
+<div id="mdnthis-bubble-host">
+
+  <style>
+    #mdnthis-bubble-main, #mdnthis-arrow-container {
+      background-color: #83d0f2;
+      z-index: 99997;
+    }
+    * {box-sizing:border-box}
+    a {color:#11c; text-decoration:none}
+    a:visited {color:#000;}
+    a:hover {text-decoration:underline}
+    .display-none {display:none!important}
+    #mdnthis-bubble-main {
+      border:1px solid #999;
+      border-radius:4px;
+      box-shadow:0 0 20px rgba(0,0,0,0.5);
+      color:#222;
+      font-family: x-locale-heading-primary,zillaslab,Palatino,"Palatino Linotype",x-locale-heading-secondary,serif;
+      font-size:14px;
+      line-height:normal;
+      padding:9px;
+      position:absolute;
+      width:300px;
+      background-image: url(https://developer.mozilla.org/static/img/hero-dino.6c51deebd4af.png);
+      background-repeat: no-repeat;
+    }
+    #mdnthis-bubble-main:after {
+      clear:both;
+      content:"";
+      display:table}
+    #mdnthis-bubble-close {
+      position:absolute;
+      top:0;
+      right:0;
+      width:16px;
+      height:16px;
+      background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAYUlEQVQYV12PwQ2AMAwD2w3YBEaAycsIsAkbgC+qowikeyCfHLe31l5xiUM8gm8RQ2x9hmuRECIUNwL2KSwhRCh2BFda4j9CTlbBtQi5ySfy5mzMTXWka3FyEwLPzJv/TR8o8xvGTnBWXwAAAABJRU5ErkJggg==');
+      background-position:center;
+      background-repeat:no-repeat;
+      cursor:pointer;
+      opacity:0.35
+    }
+    #mdnthis-bubble-close:hover {
+      opacity:0.8}
+      #mdnthis-bubble-query-row {margin-bottom:9px}
+    #mdnthis-bubble-query, #mdnthis-bubble-type {
+      display: inline;
+      vertical-align: middle;
+      height: 20px;
+    }
+    #mdnthis-bubble-type {
+    }
+    #mdnthis-bubble-query {
+      font-size: 20px;
+      font-weight:bold;
+      background-color: #333;
+      color: #fff;
+      font-weight: 400;
+    }
+    #mdnthis-bubble-description {line-height:1.3}
+    #mdnthis-bubble-options-tip, #mdnthis-bubble-link, #mdnthis-bubble-attribution {
+      font-size:12px;
+      line-height:1.3;
+      margin-top:9px
+    }
+    #mdnthis-bubble-options-tip {color:#c04}
+    #mdnthis-bubble-link a {float:right;word-break:break-all}
+    #mdnthis-bubble-attribution {
+      color:#666;
+      float:left;
+      margin-right:9px;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+      width:230px
+    }
+    #mdnthis-bubble-attribution a {color:#073}
+    #mdnthis-arrow-main {position:absolute; z-index:99998}
+    #mdnthis-bubble-arrow-inner-up, #mdnthis-bubble-arrow-inner-down {
+      background:transparent;
+      border-left:10px solid transparent;
+      border-right:10px solid transparent;
+      left:2px;
+      position:absolute;
+      width:0;
+      z-index:99999}
+    #mdnthis-bubble-arrow-inner-up {border-bottom:10px solid #83d0f2; top:2px}
+    #mdnthis-bubble-arrow-inner-down {border-top:10px solid #83d0f2}
+    #mdnthis-bubble-arrow-outer-up, #mdnthis-bubble-arrow-outer-down {
+      background:transparent;
+      border-left:12px solid transparent;
+      border-right:12px solid transparent;
+      left:0;
+      position:absolute;
+      width:0}
+    #mdnthis-bubble-arrow-outer-up {border-bottom:12px solid #999}
+    #mdnthis-bubble-arrow-outer-down {border-top:12px solid #999}
+    .nytd_selection_button {display:none}
+    #mdnthis-bubble-syntax, #mdnthis-bubble-syntax-title, #mdnthis-bubble-example-title,
+    #mdnthis-bubble-example, #mdnthis-bubble-description {
+      margin-bottom: 5px;
+      background-color: rgba(255,255,255, 0.85);
+    }
+    #mdnthis-bubble-syntax, #mdnthis-bubble-example {
+      font-family: monospace;
+      font-size: 12px;
+    }
+    #mdnthis-bubble-syntax-title, #mdnthis-bubble-example-title {
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+  </style>
+
+
+  <!-- Bubble container -->
+  <div id="mdnthis-bubble-main">
+
+    <!-- Bubble close -->
+    <div id="mdnthis-bubble-close"></div>
+
+    <!-- Bubble title row -->
+    <div id="mdnthis-bubble-query-row">
+      
+      <div id="mdnthis-bubble-query">abs</div> • 
+      <div id="mdnthis-bubble-type">method</div>
+
+    </div>
+
+    <!-- Bubble description -->
+    <div id="mdnthis-bubble-description">The Math.abs(s) function returns the absolute value of a number, that is</div>
+
+    <!-- Bubble syntax -->
+    <div id="#mdnthis-bubble-syntax-title">Syntax</div>
+    <div id="mdnthis-bubble-syntax">Math.abs(x)</div>
+
+    <!-- Bubble example -->
+    <div id="#mdnthis-bubble-example-title">Example</div>
+    <div id="mdnthis-bubble-example">function difference(a, b) {
+  return Math.abs(a - b);
+}</div>
+
+    <!-- Bubble link -->
+    <div id="mdnthis-bubble-link">
+      <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs">MDN Link</a>
+    </div>
+
+  </div>
+
+  <!-- Bubble arrow -->
+  <div id="mdnthis-arrow">
+    <div id="mdnthis-arrow-main">
+      <div id="mdnthis-bubble-arrow-inner-down"></div>
+      <div id="mdnthis-bubble-arrow-outer-down"></div>
+    </div>
+  </div>
+</div>
